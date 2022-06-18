@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+}
+
+.left {
+  background-color: aqua;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.right {
+  background-color: rgb(157, 87, 189);
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-container {
+  flex-grow: 10;
+  background-color: tomato;
+  overflow-y: auto;
+}
+
+.text-input-container {
+  flex-grow: 1;
+  background-color: darkcyan;
+}
+
+.selected {
+  background-color: red;
+}
+
+.category-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.category-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.category-text {
+  display: flex;
+  align-items: center
+}
+
+.curveBorder {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
