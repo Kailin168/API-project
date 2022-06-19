@@ -1,6 +1,7 @@
 h2 {
   text-align: center;
 }
+
 .user-instruction {
   text-align: center;
 }
@@ -14,6 +15,8 @@ h2 {
   display: flex;
   flex-direction: row;
   height: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .left-container {
@@ -21,6 +24,7 @@ h2 {
   overflow-y: auto;
   flex: 2;
   padding: 10px;
+  border-radius: 8px 0 0 8px;
 }
 
 .right-container {
@@ -32,8 +36,9 @@ h2 {
 .chat_buddy {
   background-color: rgba(241, 241, 241, 0.95);
   position: absolute;
-  width: 100%;
+  width: 75%;
   padding: 5px;
+  border-top-right-radius: 8px;
 }
 
 .messages-main-container {
@@ -56,7 +61,8 @@ h2 {
 }
 
 .selected {
-  background-color: red;
+  background-color: #4579fb;
+  border-radius: 8px;
 }
 
 .category-row {
@@ -70,6 +76,7 @@ h2 {
   height: 30px;
   width: 30px;
   border-radius: 15px;
+  margin: 0 5px;
 }
 
 .category-text {
@@ -88,13 +95,13 @@ h2 {
 
 .curve-border {
   border-radius: 20px;
-  /* padding: 20px; */
 }
 
 .message-box {
   display: flex;
   flex: 10;
   margin-right: 5px;
+  padding-left: 8px;
 }
 
 .enter-box {
