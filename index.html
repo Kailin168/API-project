@@ -20,7 +20,7 @@
       <h2>Name for the bot</h2>
     </header>
     <div class="bottom-container">
-      <div class="left">
+      <div class="left-container">
         <div class="category-row">
           <img src="./programmer.jpg" class="category-icon"></img>
           <div class="category-text">Programming</div>
@@ -46,15 +46,17 @@
           <div class="category-text">Christmas</div>
         </div>
       </div>
-      <div class="right">
-        <div class="messages-container">
-          message container
+      <div class="right-container">
+        <div class="messages-main-container">
+          <div class="chat_buddy">Chat Buddy:</div>
+          <div class="messages-container">
+            <div class="message my-message">messages-me</div>
+            <div class="message other-message">messages-other</div>
+          </div>
         </div>
         <div class="text-input-container">
-          <input type="submit"value="Enter" style="float: right" />
-          <div style="overflow: hidden; padding-right: .5em;">
-             <input type="text" value="Message" style="width: 100%;" />
-          </div>
+          <input class="curve-border message-box" type="text" value="Message" />
+          <input class="curve-border enter-box" type="submit" value="Enter" />
         </div>
       </div>
     </div>
