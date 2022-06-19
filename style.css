@@ -1,3 +1,10 @@
+h2 {
+  text-align: center;
+}
+.user-instruction {
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -100,6 +107,7 @@
   border-radius: 8px;
   margin: 3px 8px;
   max-width: 50%;
+  white-space: pre-wrap;
 }
 
 .other-message {

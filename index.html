@@ -4,7 +4,7 @@
 <head>
   <title>ChatBot</title>
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  <script defer src="index.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -13,7 +13,9 @@
 
 
   <h2>Joke bot</h2>
-  <p>Instruction?</p>
+  <p class="user-instruction">
+    Instruction?
+  </p>
 
   <div class="container">
     <header>
@@ -21,27 +23,27 @@
     </header>
     <div class="bottom-container">
       <div class="left-container">
-        <div class="category-row">
+        <div id="programming-jokes" class="category-row">
           <img src="./programmer.jpg" class="category-icon"></img>
           <div class="category-text">Programming</div>
         </div>
-        <div class="category-row">
+        <div id="misc-jokes" class="category-row">
           <img src="./misc-cat.jpeg" class="category-icon"></img>
-          <div class="category-text">Misc</div>
+          <div class="category-text">Miscellaneous</div>
         </div>
-        <div class="category-row">
+        <div id="dark-jokes" class="category-row">
           <img src="./dark-joke.png" class="category-icon"></img>
           <div class="category-text">Dark</div>
         </div>
-        <div class="category-row">
+        <div id="pun-jokes" class="category-row">
           <img src="./Pun-joke.jpg" class="category-icon"></img>
           <div class="category-text">Pun</div>
         </div>
-        <div class="category-row">
+        <div id="spooky-jokes" class="category-row">
           <img src="./spookyjoke.jpg" class="category-icon"></img>
           <div class="category-text">Spooky</div>
         </div>
-        <div class="category-row">
+        <div id="christmas-jokes" class="category-row">
           <img src="./christmasJoke.jpg" class="category-icon"></img>
           <div class="category-text">Christmas</div>
         </div>
@@ -50,12 +52,10 @@
         <div class="messages-main-container">
           <div class="chat_buddy">Chat Buddy:</div>
           <div class="messages-container">
-            <div class="message my-message">messages-me</div>
-            <div class="message other-message">messages-other</div>
           </div>
         </div>
         <div class="text-input-container">
-          <input class="curve-border message-box" type="text" value="Message" />
+          <input class="curve-border message-box" type="text" placeholder="Message" name="inputMessage" />
           <input class="curve-border enter-box" type="submit" value="Enter" />
         </div>
       </div>
