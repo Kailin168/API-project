@@ -3,40 +3,39 @@
     {
       "id": 1,
       "image": "./assets/programmer.jpg",
-      "name": "programmer",
-      "apiName":"programming"
+      "name": "Programming Pete",
+      "apiName": "programming"
     },
     {
       "id": 2,
       "image": "./assets/misc-cat.jpeg",
-      "name": "Mr. Misc",
-      "apiName":"Miscellaneous"
+      "name": "Random Ronald",
+      "apiName": "Miscellaneous"
     },
     {
       "id": 3,
       "image": "./assets/dark-joke.png",
       "name": "Dark Dan",
-      "apiName":"Dark"
+      "apiName": "Dark"
     },
     {
       "id": 4,
       "image": "./assets/Pun-joke.jpg",
       "name": "Pun Man",
-      "apiName":"Pun"
+      "apiName": "Pun"
     },
     {
       "id": 5,
       "image": "./assets/spookyjoke.jpg",
-      "name": "Spooky Man",
-      "apiName":"Spooky"
+      "name": "Spooky Susan",
+      "apiName": "Spooky"
     },
     {
       "id": 6,
       "image": "./assets/christmasJoke.jpg",
-      "name": "Santa",
-      "apiName":"Christmas"
+      "name": "Santa Clause",
+      "apiName": "Christmas"
     }
-
   ],
   "messages": [
     {
@@ -52,7 +51,118 @@
       "content": "test message 2",
       "timeStamp": 1655821248893,
       "chatId": 1
+    },
+    {
+      "senderIsMe": true,
+      "content": "hey",
+      "timeStamp": 1655835223226,
+      "chatId": 1,
+      "id": 3
+    },
+    {
+      "senderIsMe": false,
+      "content": "There are only 10 kinds of people in this world: those who know binary and those who don't.",
+      "timeStamp": 1655835223584,
+      "chatId": 1,
+      "id": 4
+    },
+    {
+      "senderIsMe": true,
+      "content": "Another",
+      "timeStamp": 1655835236901,
+      "chatId": 2,
+      "id": 5
+    },
+    {
+      "senderIsMe": false,
+      "content": "A perfectionist walked into a bar... apparently, the bar was not set high enough.",
+      "timeStamp": 1655835237258,
+      "chatId": 2,
+      "id": 6
+    },
+    {
+      "senderIsMe": true,
+      "content": "Tell me a Dark joke, Dark Dan",
+      "timeStamp": 1655835452266,
+      "chatId": 3,
+      "id": 7
+    },
+    {
+      "senderIsMe": false,
+      "content": "I didn't vaccinate my 10 kids and the one that survived is fine!",
+      "timeStamp": 1655835452639,
+      "chatId": 3,
+      "id": 8
+    },
+    {
+      "senderIsMe": true,
+      "content": "wow thats sad",
+      "timeStamp": 1655835462115,
+      "chatId": 3,
+      "id": 9
+    },
+    {
+      "senderIsMe": false,
+      "content": "My grandfather says I'm too reliant on technology.\nI called him a hypocrite and unplugged his life support.",
+      "timeStamp": 1655835462446,
+      "chatId": 3,
+      "id": 10
+    },
+    {
+      "senderIsMe": true,
+      "content": "Ho Ho Ho",
+      "timeStamp": 1655835478721,
+      "chatId": 6,
+      "id": 11
+    },
+    {
+      "senderIsMe": false,
+      "content": "No matching joke found",
+      "timeStamp": 1655835479028,
+      "chatId": 6,
+      "id": 12
+    },
+    {
+      "senderIsMe": true,
+      "content": "Ho Ho Ho",
+      "timeStamp": 1655835483702,
+      "chatId": 6,
+      "id": 13
+    },
+    {
+      "senderIsMe": false,
+      "content": "No matching joke found",
+      "timeStamp": 1655835484009,
+      "chatId": 6,
+      "id": 14
+    },
+    {
+      "senderIsMe": true,
+      "content": "Ho Ho Ho",
+      "timeStamp": 1655835491853,
+      "chatId": 5,
+      "id": 15
+    },
+    {
+      "senderIsMe": false,
+      "content": "No matching joke found",
+      "timeStamp": 1655835492163,
+      "chatId": 5,
+      "id": 16
+    },
+    {
+      "senderIsMe": true,
+      "content": "Ho Ho Ho",
+      "timeStamp": 1655835496493,
+      "chatId": 4,
+      "id": 17
+    },
+    {
+      "senderIsMe": false,
+      "content": "I'm reading a book about anti-gravity. It's impossible to put down!",
+      "timeStamp": 1655835496850,
+      "chatId": 4,
+      "id": 18
     }
-
   ]
 }
