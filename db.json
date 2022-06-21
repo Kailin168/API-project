@@ -1,20 +1,27 @@
 {
+  "Chat": [
+    {
+      "id": 1,
+      "image": "./assets/programmer.jpg",
+      "name": "programmer",
+      "apiName":"programmer"
+    }
+  ],
   "Messages": [
     {
       "id": 1,
-      "timestamp": "json-server",
-      "sender": "typicode",
-      "reciever": "typicode"
-    }
-  ],
-  "comments": [
+      "senderIsMe": true,
+      "content": "test message 1",
+      "timeStamp": 1655821248892,
+      "chatId": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "senderIsMe": false,
+      "content": "test message 2",
+      "timeStamp": 1655821248893,
+      "chatId": 1
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+
+  ]
 }
