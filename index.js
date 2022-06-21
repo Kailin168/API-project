@@ -24,6 +24,7 @@ fetch('http://localhost:3000/chat')
   .then((chats) => {
     chatObjGlobal = chats;
     chats.forEach(displayChats);
+    leftPane.children[0].click() // page to start with programming jokes
   });
 
 function displayChats(chat) {
