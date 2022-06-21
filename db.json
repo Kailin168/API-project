@@ -163,6 +163,34 @@
       "timeStamp": 1655835496850,
       "chatId": 4,
       "id": 18
+    },
+    {
+      "senderIsMe": true,
+      "content": "hi",
+      "timeStamp": 1655837884141,
+      "chatId": 1,
+      "id": 19
+    },
+    {
+      "senderIsMe": false,
+      "content": "Two C strings walk into a bar.\nThe bartender asks \"What can I get ya?\"\nThe first string says \"I'll have a gin and tonic.\"\nThe second string thinks for a minute, then says \"I'll take a tequila sunriseJF()#$JF(#)$(@J#()$@#())!*FNIN!OBN134ufh1ui34hf9813f8h8384h981h3984h5F!##@\"\nThe first string apologizes, \"You'll have to excuse my friend, he's not null-terminated.\"",
+      "timeStamp": 1655837884673,
+      "chatId": 1,
+      "id": 20
+    },
+    {
+      "senderIsMe": true,
+      "content": "hi",
+      "timeStamp": 1655838160087,
+      "chatId": 1,
+      "id": 21
+    },
+    {
+      "senderIsMe": false,
+      "content": "Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.",
+      "timeStamp": 1655838160509,
+      "chatId": 1,
+      "id": 22
     }
   ]
 }
