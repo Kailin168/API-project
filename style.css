@@ -15,8 +15,8 @@ h2 {
   display: flex;
   flex-direction: row;
   height: 350px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .left-container {
@@ -36,7 +36,7 @@ h2 {
 .chat_buddy {
   background-color: rgba(241, 241, 241, 0.95);
   position: absolute;
-  width: 75%;
+  width: 70%;
   padding: 5px;
   border-top-right-radius: 8px;
 }
