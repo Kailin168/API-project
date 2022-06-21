@@ -1,13 +1,44 @@
 {
-  "Chat": [
+  "chat": [
     {
       "id": 1,
       "image": "./assets/programmer.jpg",
       "name": "programmer",
-      "apiName":"programmer"
+      "apiName":"programming"
+    },
+    {
+      "id": 2,
+      "image": "./assets/misc-cat.jpeg",
+      "name": "Mr. Misc",
+      "apiName":"Miscellaneous"
+    },
+    {
+      "id": 3,
+      "image": "./assets/dark-joke.png",
+      "name": "Dark Dan",
+      "apiName":"Dark"
+    },
+    {
+      "id": 4,
+      "image": "./assets/Pun-joke.jpg",
+      "name": "Pun Man",
+      "apiName":"Pun"
+    },
+    {
+      "id": 5,
+      "image": "./assets/spookyjoke.jpg",
+      "name": "Spooky Man",
+      "apiName":"Spooky"
+    },
+    {
+      "id": 6,
+      "image": "./assets/christmasJoke.jpg",
+      "name": "Santa",
+      "apiName":"Christmas"
     }
+
   ],
-  "Messages": [
+  "messages": [
     {
       "id": 1,
       "senderIsMe": true,
