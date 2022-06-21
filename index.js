@@ -37,7 +37,7 @@ function displayChats(chat) {
   chatImg.alt = chat.name;
   chatImg.className = "category-icon";
   textDiv.className = "category-text";
-  textDiv.textContent = chat.apiName;
+  textDiv.textContent = chat.name;
 
   chatDiv.append(chatImg, textDiv);
 
@@ -93,6 +93,14 @@ function handleNewMessage() {
   newMessageDiv.setAttribute("class", "message my-message");
   messageContainer.appendChild(newMessageDiv);
 
+  newMeMsgObj = {
+    senderIsMe: true,
+    content: newMessageDiv.textContent,
+    timeStamp: Date.now(),
+    chatId: chatObjGlobal[currentIndexGlobal].id,
+  };
+  addNewMsg(newMeMsgObj);
+
   document.querySelector(".messages-container").scrollTop =
     document.querySelector(".messages-container").scrollHeight;
   fetch(
@@ -108,9 +116,31 @@ function handleNewMessage() {
       } else {
         serverJokeDiv.textContent = data.joke;
       }
+
+      const newMsgObj = {
+        senderIsMe: false,
+        content: serverJokeDiv.textContent,
+        timeStamp: Date.now(),
+        chatId: chatObjGlobal[currentIndexGlobal].id,
+      };
+
+      addNewMsg(newMsgObj);
+
       serverJokeDiv.setAttribute("class", "message other-message");
       messageContainer.appendChild(serverJokeDiv);
       document.querySelector(".messages-container").scrollTop =
         document.querySelector(".messages-container").scrollHeight;
     });
+}
+
+function addNewMsg(obj) {
+  fetch("http://localhost:3000/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(obj),
+  })
+    .then((res) => res.json())
+    .then((data) => {});
 }
