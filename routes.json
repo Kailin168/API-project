@@ -1,0 +1,3 @@
+{
+    "/chat/:id": "/chat/:id?_embed=messages"
+  }
