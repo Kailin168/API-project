@@ -24,7 +24,8 @@ body {
 }
 
 .toggle-mode {
-margin: 20px;
+margin-right: 50px;
+margin-bottom: 50px;
 float: right;
 border-radius: 8px;
 }
