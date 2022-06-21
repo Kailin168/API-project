@@ -24,7 +24,7 @@ fetch('http://localhost:3000/chat')
   .then((chats) => {
     chatObjGlobal = chats;
     chats.forEach(displayChats);
-    leftPane.children[0].click() // page to start with programming jokes
+    leftPane.children[0].click(); // page to start with programming jokes
   });
 
 function displayChats(chat) {
@@ -102,8 +102,7 @@ function handleNewMessage() {
 
   document.querySelector('.messages-container').scrollTop = document.querySelector('.messages-container').scrollHeight;
   fetch(
-    `https://v2.jokeapi.dev/joke/${
-      chatObjGlobal[currentIndexGlobal].apiName
+    `https://v2.jokeapi.dev/joke/${chatObjGlobal[currentIndexGlobal].apiName
     }?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&amount=1`,
   )
     .then((res) => res.json())
@@ -139,5 +138,10 @@ function addNewMsg(obj) {
     body: JSON.stringify(obj),
   })
     .then((res) => res.json())
-    .then((data) => {});
+    .then((data) => { });
+}
+
+function myFunction() {
+  const element = document.body;
+  element.classList.toggle('green-mode');
 }

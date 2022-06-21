@@ -12,6 +12,23 @@ h2 {
   text-align: center;
 }
 
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+}
+
+.green-mode {
+  background-color: #C3E4C6;
+  color: black;
+}
+
+.toggle-mode {
+margin: 20px;
+float: right;
+border-radius: 8px;
+}
+
 .user-instruction {
   text-align: center;
 }
@@ -27,6 +44,7 @@ h2 {
   height: 350px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 75px;
 }
 
 .left-container {
@@ -46,7 +64,7 @@ h2 {
 .chat_buddy {
   background-color: rgba(241, 241, 241, 0.95);
   position: absolute;
-  width: 73%;
+  width: 72%;
   padding: 5px;
   border-top-right-radius: 8px;
 }
