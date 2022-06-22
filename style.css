@@ -18,9 +18,9 @@ body {
   color: black;
 }
 
-.green-mode {
-  background-color: #C3E4C6;
-  color: black;
+.dark-mode {
+  background-color: #434343;
+  color: rgb(19, 18, 18);
 }
 
 .toggle-mode {
@@ -171,7 +171,7 @@ border-radius: 8px;
 }
 
 .footer-container {
-  padding: 40px 0;
+  padding: 10px 0;
   background-color: #ffffff;
   color: #4b4c4d;
 }
@@ -180,7 +180,7 @@ border-radius: 8px;
   padding: 0;
   list-style: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6;
   margin-bottom: 0;
 }
@@ -197,7 +197,6 @@ border-radius: 8px;
 
 .footer-container .social {
   text-align: center;
-  padding-bottom: 25px;
 }
 
 .footer-container .copyright {

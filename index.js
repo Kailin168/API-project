@@ -133,9 +133,9 @@ function addNewMsg(obj) {
   });
 }
 
-function toggleGreenMode(element) {
-  element.textContent = `Green Mode: ${element.textContent.indexOf('OFF') !== -1 ? 'ON' : 'OFF'}`;
+function toggleDarkMode(element) {
+  element.textContent = `Dark Mode: ${element.textContent.indexOf('OFF') !== -1 ? 'ON' : 'OFF'}`;
 
   const bodyElement = document.body;
-  bodyElement.classList.toggle('green-mode');
+  bodyElement.classList.toggle('dark-mode');
 }
