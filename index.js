@@ -68,11 +68,21 @@ function handleChatClick(e) {
     });
 }
 
-function createMessageDiv({ content, senderIsMe }) {
+function createMessageDiv({ content, senderIsMe, timeStamp }) {
+  const messageAndTimeDiv = document.createElement('div');
+  messageAndTimeDiv.className = `message ${senderIsMe ? 'my' : 'other'}-message`;
+
   const newMessageDiv = document.createElement('div');
+  newMessageDiv.className = 'message-text';
+
+  const timeSpan = document.createElement('span');
+  timeSpan.className = 'message-time';
+
+  timeSpan.textContent = (new Date(timeStamp)).toLocaleString();
   newMessageDiv.textContent = content;
-  newMessageDiv.className = `message ${senderIsMe ? 'my' : 'other'}-message`;
-  messageContainer.appendChild(newMessageDiv);
+
+  messageAndTimeDiv.append(newMessageDiv, timeSpan);
+  messageContainer.appendChild(messageAndTimeDiv);
   return newMessageDiv;
 }
 
@@ -83,16 +93,15 @@ function removeAllChildNodes(parent) {
 }
 
 function handleNewMessage() {
-  const newMessageDiv = createMessageDiv({ content: textMessageInputBox.value, senderIsMe: true });
+  let timeStamp = Date.now();
+  const newMessageDiv = createMessageDiv({ content: textMessageInputBox.value, senderIsMe: true, timeStamp });
   textMessageInputBox.value = '';
-
-  newMeMsgObj = {
+  addNewMsg({
     senderIsMe: true,
     content: newMessageDiv.textContent,
-    timeStamp: Date.now(),
+    timeStamp,
     chatId: chatObjGlobal[currentIndexGlobal].id,
-  };
-  addNewMsg(newMeMsgObj);
+  });
 
   document.querySelector('.messages-container').scrollTop = document.querySelector('.messages-container').scrollHeight;
   fetch(
@@ -101,16 +110,14 @@ function handleNewMessage() {
   )
     .then((res) => res.json())
     .then((data) => {
-      const serverJokeDiv = createMessageDiv({ content: data.code === 106 ? data.message : data.joke, senderIsMe: false });
-
-      const newMsgObj = {
+      timeStamp = Date.now();
+      const serverJokeDiv = createMessageDiv({ content: data.code === 106 ? data.message : data.joke, senderIsMe: false, timeStamp });
+      addNewMsg({
         senderIsMe: false,
         content: serverJokeDiv.textContent,
-        timeStamp: Date.now(),
+        timeStamp,
         chatId: chatObjGlobal[currentIndexGlobal].id,
-      };
-
-      addNewMsg(newMsgObj);
+      });
 
       document.querySelector('.messages-container').scrollTop = document.querySelector('.messages-container').scrollHeight;
     });
@@ -123,12 +130,12 @@ function addNewMsg(obj) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(obj),
-  })
-    .then((res) => res.json())
-    .then((data) => { });
+  });
 }
 
-function toggleGreenMode() {
-  const element = document.body;
-  element.classList.toggle('green-mode');
+function toggleGreenMode(element) {
+  element.textContent = `Green Mode: ${element.textContent.indexOf('OFF') !== -1 ? 'ON' : 'OFF'}`;
+
+  const bodyElement = document.body;
+  bodyElement.classList.toggle('green-mode');
 }
