@@ -191,6 +191,62 @@
       "timeStamp": 1655838160509,
       "chatId": 1,
       "id": 22
+    },
+    {
+      "senderIsMe": true,
+      "content": "hi",
+      "timeStamp": 1655856389137,
+      "chatId": 1,
+      "id": 23
+    },
+    {
+      "senderIsMe": false,
+      "content": "Judge: \"I sentence you to the maximum punishment...\"\nMe (thinking): \"Please be death, please be death...\"\nJudge: \"Learn Java!\"\nMe: \"Damn.\"",
+      "timeStamp": 1655856389527,
+      "chatId": 1,
+      "id": 24
+    },
+    {
+      "senderIsMe": true,
+      "content": "hello again",
+      "timeStamp": 1655856548468,
+      "chatId": 1,
+      "id": 25
+    },
+    {
+      "senderIsMe": false,
+      "content": "I've got a really good UDP joke to tell you but I don’t know if you'll get it.",
+      "timeStamp": 1655856548779,
+      "chatId": 1,
+      "id": 26
+    },
+    {
+      "senderIsMe": true,
+      "content": "again",
+      "timeStamp": 1655856563647,
+      "chatId": 1,
+      "id": 27
+    },
+    {
+      "senderIsMe": false,
+      "content": "Judge: \"I sentence you to the maximum punishment...\"\nMe (thinking): \"Please be death, please be death...\"\nJudge: \"Learn Java!\"\nMe: \"Damn.\"",
+      "timeStamp": 1655856563934,
+      "chatId": 1,
+      "id": 28
+    },
+    {
+      "senderIsMe": true,
+      "content": "hi",
+      "timeStamp": 1655856648549,
+      "chatId": 1,
+      "id": 29
+    },
+    {
+      "senderIsMe": false,
+      "content": "There are only 10 kinds of people in this world: those who know binary and those who don't.",
+      "timeStamp": 1655856648846,
+      "chatId": 1,
+      "id": 30
     }
   ]
 }

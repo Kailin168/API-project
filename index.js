@@ -75,6 +75,7 @@ function handleChatClick(e) {
           messageContainer.appendChild(newMessageDiv);
         }
       });
+      document.querySelector('.messages-container').scrollTop = document.querySelector('.messages-container').scrollHeight;
     });
 }
 
