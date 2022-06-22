@@ -247,6 +247,48 @@
       "timeStamp": 1655856648846,
       "chatId": 1,
       "id": 30
+    },
+    {
+      "senderIsMe": true,
+      "content": "hi",
+      "timeStamp": 1655860283374,
+      "chatId": 1,
+      "id": 31
+    },
+    {
+      "senderIsMe": false,
+      "content": "Have a great weekend!\nI hope your code behaves the same on Monday as it did on Friday.",
+      "timeStamp": 1655860283747,
+      "chatId": 1,
+      "id": 32
+    },
+    {
+      "senderIsMe": true,
+      "content": "1",
+      "timeStamp": 1655860290919,
+      "chatId": 1,
+      "id": 33
+    },
+    {
+      "senderIsMe": false,
+      "content": "Algorithm: A word used by programmers when they don't want to explain how their code works.",
+      "timeStamp": 1655860291331,
+      "chatId": 1,
+      "id": 34
+    },
+    {
+      "senderIsMe": true,
+      "content": "hi",
+      "timeStamp": 1655861240400,
+      "chatId": 1,
+      "id": 35
+    },
+    {
+      "senderIsMe": false,
+      "content": "Debugging: Removing the needles from the haystack.",
+      "timeStamp": 1655861240587,
+      "chatId": 1,
+      "id": 36
     }
   ]
 }

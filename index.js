@@ -48,7 +48,6 @@ function displayChats(chat) {
 }
 
 function handleChatClick(e) {
-  leftPane.querySelectorAll('div');
   leftPane.querySelectorAll('.category-row')[currentIndexGlobal].className = 'category-row';
 
   e.currentTarget.className = 'category-row selected';
@@ -63,20 +62,18 @@ function handleChatClick(e) {
     .then((res) => res.json())
     .then((chatData) => {
       chatData.messages.forEach((item) => {
-        if (item.senderIsMe) {
-          const newMessageDiv = document.createElement('div');
-          newMessageDiv.textContent = item.content;
-          newMessageDiv.setAttribute('class', 'message my-message');
-          messageContainer.appendChild(newMessageDiv);
-        } else {
-          const newMessageDiv = document.createElement('div');
-          newMessageDiv.textContent = item.content;
-          newMessageDiv.setAttribute('class', 'message other-message');
-          messageContainer.appendChild(newMessageDiv);
-        }
+        createMessageDiv(item);
       });
       document.querySelector('.messages-container').scrollTop = document.querySelector('.messages-container').scrollHeight;
     });
+}
+
+function createMessageDiv({ content, senderIsMe }) {
+  const newMessageDiv = document.createElement('div');
+  newMessageDiv.textContent = content;
+  newMessageDiv.className = `message ${senderIsMe ? 'my' : 'other'}-message`;
+  messageContainer.appendChild(newMessageDiv);
+  return newMessageDiv;
 }
 
 function removeAllChildNodes(parent) {
@@ -86,12 +83,8 @@ function removeAllChildNodes(parent) {
 }
 
 function handleNewMessage() {
-  const newMessageDiv = document.createElement('div');
-
-  newMessageDiv.textContent = textMessageInputBox.value;
+  const newMessageDiv = createMessageDiv({ content: textMessageInputBox.value, senderIsMe: true });
   textMessageInputBox.value = '';
-  newMessageDiv.setAttribute('class', 'message my-message');
-  messageContainer.appendChild(newMessageDiv);
 
   newMeMsgObj = {
     senderIsMe: true,
@@ -108,12 +101,7 @@ function handleNewMessage() {
   )
     .then((res) => res.json())
     .then((data) => {
-      const serverJokeDiv = document.createElement('div');
-      if (data.code === 106) {
-        serverJokeDiv.textContent = data.message;
-      } else {
-        serverJokeDiv.textContent = data.joke;
-      }
+      const serverJokeDiv = createMessageDiv({ content: data.code === 106 ? data.message : data.joke, senderIsMe: false });
 
       const newMsgObj = {
         senderIsMe: false,
@@ -124,8 +112,6 @@ function handleNewMessage() {
 
       addNewMsg(newMsgObj);
 
-      serverJokeDiv.setAttribute('class', 'message other-message');
-      messageContainer.appendChild(serverJokeDiv);
       document.querySelector('.messages-container').scrollTop = document.querySelector('.messages-container').scrollHeight;
     });
 }
@@ -142,7 +128,7 @@ function addNewMsg(obj) {
     .then((data) => { });
 }
 
-function myFunction() {
+function toggleGreenMode() {
   const element = document.body;
   element.classList.toggle('green-mode');
 }
