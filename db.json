@@ -23,18 +23,6 @@
       "image": "./assets/Pun-joke.jpg",
       "name": "Pun Man",
       "apiName": "Pun"
-    },
-    {
-      "id": 5,
-      "image": "./assets/spookyjoke.jpg",
-      "name": "Spooky Susan",
-      "apiName": "Spooky"
-    },
-    {
-      "id": 6,
-      "image": "./assets/christmasJoke.jpg",
-      "name": "Santa Clause",
-      "apiName": "Christmas"
     }
   ],
   "messages": [
@@ -331,6 +319,20 @@
       "timeStamp": 1655866465121,
       "chatId": 1,
       "id": 42
+    },
+    {
+      "senderIsMe": true,
+      "content": "j",
+      "timeStamp": 1655901312855,
+      "chatId": 5,
+      "id": 43
+    },
+    {
+      "senderIsMe": false,
+      "content": "No matching joke found",
+      "timeStamp": 1655901313397,
+      "chatId": 5,
+      "id": 44
     }
   ]
 }

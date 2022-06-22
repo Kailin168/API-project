@@ -37,6 +37,7 @@ border-radius: 8px;
 .container {
   display: flex;
   flex-direction: column;
+  
 }
 
 .bottom-container {
@@ -54,6 +55,7 @@ border-radius: 8px;
   flex: 2;
   padding: 10px;
   border-radius: 8px 0 0 8px;
+
 }
 
 .right-container {
